@@ -18,7 +18,7 @@ int CHAR_ARR_TO_INT(char *str){
     return sum;
 }
 
-char* STR_CONCATE(char *str1,char *str2){
+char* ADD(char *str1,char *str2){
   int count=0,count2=0;
   for(count=0;str1[count];count++);
   for(count,count2;str2[count2];count2++,count++)
@@ -62,6 +62,6 @@ int main()
   if(count1==c1&&count2==c1)
     cout<<"SUM IS:"<<ADD(CHAR_ARR_TO_INT(str1),CHAR_ARR_TO_INT(str2))<<endl;
   else
-    cout<<"THE CONCATENATED STRING IS:"<<STR_CONCATE(str1,str2)<<endl;
+    cout<<"THE CONCATENATED STRING IS:"<<ADD(str1,str2)<<endl;
   return 0;
 }
