@@ -8,14 +8,14 @@ int ADD(int num1,int num2){
 }
 
 int CHAR_ARR_TO_INT(char *str){
-    int sum=0;
+    int num=0;
     for(int i=0;str[i];i++){
       if(str[i]==32)
         continue;
       else
-        sum=sum*10+(str[i]-48);
+        num=num*10+(str[i]-48);
     }
-    return sum;
+    return num;
 }
 
 char* ADD(char *str1,char *str2){
